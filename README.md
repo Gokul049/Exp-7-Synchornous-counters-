@@ -46,17 +46,57 @@ This type of counter is normally referred to as a Down Counter, (CTD). In a bina
 
 4-bit Count Down Counter
 ### Procedure
-/* write all the steps invloved */
 
+1.Create a new project in QuartusII software.
 
+2.Name the project as uc for upcounter and dc for down counter.
+
+3.Create a new verilog hdl file in the project file.
+
+4.Name the module as dc and uc for down counter and up counter.
+
+5.Within the module declare input and output variables.
+
+6.Create a loop using if-else with condition parameter as reset value.
+
+7.End the loop.
+
+8.End the module.
 
 ### PROGRAM 
-/*
+```
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: GOKUL T
+RegisterNumber:  212222050015
 
+UP COUNTER
+
+module uc(input CLK,input reset,output[0:3]counter);
+reg[0:3] counter_up;
+always@(posedge CLKor posedge reset)
+begin
+if(reset)
+counter_up<=4'd0;
+else
+counter_up<=counter_up+4'd1;
+end
+assign counter=counter_up;
+endmodule
+
+DOWN COUNTER
+
+module dc(input CLKinput reset,output[0:3]counter);
+reg[0:3] counter_down;
+always@(posedge  CLK or posedge reset)
+begin
+if(reset)
+counter_down<=4'd0;
+else
+counter_down<=counter_down-4'd1;
+end
+assign counter=counter_down;
+endmodule
+```
 
 
 
@@ -64,6 +104,13 @@ RegisterNumber:
 
 ### RTL LOGIC UP COUNTER AND DOWN COUNTER  
 
+UP COUNTER
+
+![image](https://github.com/Gokul049/Exp-7-Synchornous-counters-/assets/131269675/805ee90a-5072-4332-871d-3f5b15144897)
+
+DOWN COUNTER
+
+![image](https://github.com/Gokul049/Exp-7-Synchornous-counters-/assets/131269675/33616485-7e51-4685-aac4-4bf57053dd3d)
 
 
 
@@ -74,6 +121,14 @@ RegisterNumber:
 
 ### TIMING DIGRAMS FOR COUNTER  
 
+UP COUNTER
+![image](https://github.com/Gokul049/Exp-7-Synchornous-counters-/assets/131269675/213d8851-a258-45a5-be96-7e887fa53b45)
+
+DOWN COUNTER
+
+![image](https://github.com/Gokul049/Exp-7-Synchornous-counters-/assets/131269675/ef16373d-c48f-47f2-8851-31295c7ca865)
+
+
 
 
 
@@ -81,8 +136,13 @@ RegisterNumber:
 ### TRUTH TABLE 
 
 
+UP COUNTER
 
+![image](https://github.com/Gokul049/Exp-7-Synchornous-counters-/assets/131269675/41d60fbf-4b73-4de6-9248-402022af3c75)
+
+DOWN COUNTER
 
 
 
 ### RESULTS 
+4 bit up and down counters are implemented and its functionality is validated successfully.
