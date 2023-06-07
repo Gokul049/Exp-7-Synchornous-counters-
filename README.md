@@ -122,6 +122,7 @@ DOWN COUNTER
 ### TIMING DIGRAMS FOR COUNTER  
 
 UP COUNTER
+
 ![image](https://github.com/Gokul049/Exp-7-Synchornous-counters-/assets/131269675/213d8851-a258-45a5-be96-7e887fa53b45)
 
 DOWN COUNTER
@@ -141,6 +142,8 @@ UP COUNTER
 ![image](https://github.com/Gokul049/Exp-7-Synchornous-counters-/assets/131269675/41d60fbf-4b73-4de6-9248-402022af3c75)
 
 DOWN COUNTER
+
+![image](https://github.com/Gokul049/Exp-7-Synchornous-counters-/assets/131269675/6a35399a-599f-4225-877d-d6a6e2749fa2)
 
 
 
